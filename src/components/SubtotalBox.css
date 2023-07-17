@@ -1,0 +1,38 @@
+.subtotalbox{
+    float: right ;
+    margin: 20px;
+    width: 350px;
+    height: 300px;
+    background-color: white;
+    border: 2px solid rgb(236, 231, 231);
+    border-radius: 5px;
+    padding: 30px;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.subtotalbox p{
+    margin: 0px;
+    line-height: 1;
+}
+
+.subtotalbox :first-child :first-child{
+    color: rgb(8,126,99);
+}
+
+.buyButton{
+    width: 80%;
+    border-radius: 10px;
+    border: 0px;
+    background-color: rgb(255,216,20);
+    color: black;
+    padding: 5px;
+    margin-top: 20px;
+
+}
+
+.total{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}

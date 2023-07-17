@@ -1,0 +1,38 @@
+.home {
+    background-color: rgb(229, 234, 234);
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.card {
+    position: relative;
+    bottom: 330px;
+    margin-left: 10px;
+}
+
+.cardTray {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+
+}
+
+.ProductCard{
+    position: relative;
+    bottom: 300px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    width: auto;
+}
+
+.homeCards{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1500px;
+    margin: auto;
+    height: 700px;
+    justify-content: space-around;
+}
+
+.menu{
+    align-items: center;
+}

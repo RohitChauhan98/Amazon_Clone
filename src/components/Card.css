@@ -1,0 +1,26 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    /* padding: 10px; */
+    grid-gap: 10px;
+  }
+
+  .grid-container img{
+    height: 95px;
+    width: 152px;
+    /* margin: 5px; */
+  }
+
+  .card p{
+    margin-bottom: 5px;
+  }
+
+  .card{
+    width: 350px;
+    height: 350px;
+    border: 0px;
+    font-size: 12px;
+    /* text-align: left; */
+    padding: 20px;
+  }
+
