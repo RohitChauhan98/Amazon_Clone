@@ -1,24 +1,36 @@
 import React from 'react'
-import logo from '../Images/amazon-logo.png'
+import logo from './Images/amazon-logo.png'
 import './Header.css'
 import { Link } from 'react-router-dom'
 import { useStateValue } from './StateProvider';
+import { auth } from '../components/firebase'
+import { signOut } from 'firebase/auth';
 
 
 function Header() {
-    const [{basket}] = useStateValue();
-    
+    const [{ basket, user }] = useStateValue();
+
+    const handleSignout = async() =>{
+        try { 
+            if(user){
+                await signOut(auth)
+            }
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
     return (
         <>
             <div className='header'>
-            <Link className='cartLink' to="/">
-                <img className="amazonLogo" src={logo} alt="Amazon Logo" />
-            </Link>
+                <Link className='cartLink' to="/">
+                    <img className="amazonLogo" src={logo} alt="Amazon Logo" />
+                </Link>
 
                 <div className='address' style={{ alignItems: "center" }}>
                     <i class="fa-solid fa-location-dot" style={{ color: "#ffffff", margin: "auto", marginRight: "5px", }}></i>
                     <div>
-                        <p>Hello</p>
+                        <p>Hello{", "+user?.email}</p>
                         <p><b>Select your address</b></p>
                     </div>
                 </div>
@@ -47,25 +59,27 @@ function Header() {
                         <p><b>Account & Lists</b></p>
                     </div> */}
 
-                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Disabled popover">
-                        <p>Hello, sign in</p>
-                        <p><b>Account & Lists</b></p>
-                    </span>
+                    <Link to={!user && '/login'} style={{textDecoration:'none', color: "white"}}>
+                        <div onClick={handleSignout}>
+                            <p>Hello, {user? 'sign out':'sign in'}</p>
+                            <p><b>Account & Lists</b></p>
+                        </div>
+                    </Link>
 
                     <div>
                         <p>Returns</p>
                         <p><b>& Orders</b></p>
                     </div>
 
-                        <Link className='cartLink' to="/cart">
-                    <div style={{ display: "flex" }}>
+                    <Link className='cartLink' to="/cart">
+                        <div style={{ display: "flex" }}>
                             <i class="fa-solid fa-cart-shopping fa-bounce fa-xl" style={{ position: "relative", top: "15px" }}></i>
                             <div style={{ marginLeft: "10px" }}>
                                 <h6 style={{ marginBottom: "0px" }}>Cart</h6>
                                 <p style={{ marginBottom: "0px" }}>{basket?.length} Items</p>
                             </div>
-                    </div>
-                        </Link>
+                        </div>
+                    </Link>
 
                 </div>
 

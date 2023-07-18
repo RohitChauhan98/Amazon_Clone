@@ -9,8 +9,7 @@ function ProductCard(props) {
         stars.push(<span key={i}>⭐</span>);
     }
 
-    const [{basket}, dispatch] = useStateValue();
-    console.log('this is basket>>>'+ basket)
+    const [ ,dispatch] = useStateValue();
     
     const addToBasket = () => {
         dispatch({

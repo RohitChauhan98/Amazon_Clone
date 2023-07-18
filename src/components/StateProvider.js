@@ -15,6 +15,7 @@ export const useStateValue = () => useContext(StateContext);
 
 export const initialState = {
     basket: [],
+    user: null
 };
 
 
@@ -43,7 +44,16 @@ export function reducer(state, action) {
                 ...state,
                 basket: newBasket
             }
+
         }
+        case 'SET_USER': {
+            return{
+                ...state,
+                user: action.user
+            }
+        }
+
+
 
         default:
             return state;
