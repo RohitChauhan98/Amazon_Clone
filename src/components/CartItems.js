@@ -1,6 +1,8 @@
 
 import { useStateValue } from "./StateProvider"
 import './CartItems.css'
+import FlipMove from 'react-flip-move';
+import CurrencyFormat from "react-currency-format";
 
 function CartItems() {
     const [{ basket }] = useStateValue();
@@ -19,13 +21,20 @@ function CartItems() {
 
             }
             <hr />
-            {basket.map(st => (
-
-                <div key={st.id}>
-                    <Product item={st} />
-                    <hr />
-                </div>))}
-                <h5 style={{float: "right"}}>Subtotal({basket.length} items):  {sum}</h5>
+            <FlipMove>
+                {basket.map(st => (
+                    <div key={st.id}>
+                        <Product item={st} />
+                        <hr />
+                    </div>))}
+            </FlipMove>
+            <CurrencyFormat
+                  value={sum}
+                  displayType={'text'}
+                  thousandSeparator={true}
+                  prefix={'₹'}
+                  renderText={value => <h5 style={{ float: "right" }}>Subtotal({basket.length} items):  {value}</h5>} />
+            
         </div>
 
     )
@@ -33,11 +42,11 @@ function CartItems() {
 
 
 
-function Product({ item }) {
+export function Product({ item }) {
 
-    const [{basket}, dispatch] = useStateValue();
+    const [, dispatch] = useStateValue();
 
-    const deleteItem = () =>{
+    const deleteItem = () => {
         dispatch({
             type: 'DELETE_FROM_BASKET',
             id: item.id

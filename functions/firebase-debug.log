@@ -1,0 +1,369 @@
+[debug] [2023-07-22T08:51:37.084Z] ----------------------------------------------------------------------
+[debug] [2023-07-22T08:51:37.087Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\DELL\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2023-07-22T08:51:37.087Z] CLI Version:   12.4.5
+[debug] [2023-07-22T08:51:37.088Z] Platform:      win32
+[debug] [2023-07-22T08:51:37.088Z] Node Version:  v18.16.0
+[debug] [2023-07-22T08:51:37.089Z] Time:          Sat Jul 22 2023 14:21:37 GMT+0530 (India Standard Time)
+[debug] [2023-07-22T08:51:37.089Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-22T08:51:37.231Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-22T08:51:37.232Z] > authorizing via signed-in user (rc56951@gmail.com)
+[info] i  emulators: Starting emulators: functions, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, hosting"}}
+[debug] [2023-07-22T08:51:37.249Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-07-22T08:51:37.249Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-07-22T08:51:37.250Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2023-07-22T08:51:37.263Z] [hub] writing locator at C:\Users\DELL\AppData\Local\Temp\hub-clone-feef0.json
+[debug] [2023-07-22T08:51:37.290Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-07-22T08:51:37.290Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-07-22T08:51:37.291Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, pubsub, storage\u001b[22m"}}
+[debug] [2023-07-22T08:51:37.299Z] defaultcredentials: writing to file C:\Users\DELL\AppData\Roaming\firebase\rc56951_gmail_com_application_default_credentials.json
+[debug] [2023-07-22T08:51:37.317Z] Setting GAC to C:\Users\DELL\AppData\Roaming\firebase\rc56951_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\DELL\\AppData\\Roaming\\firebase\\rc56951_gmail_com_application_default_credentials.json"}}
+[debug] [2023-07-22T08:51:37.320Z] > refreshing access token with scopes: []
+[debug] [2023-07-22T08:51:37.322Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-07-22T08:51:37.322Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-07-22T08:51:37.689Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-07-22T08:51:37.689Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-07-22T08:51:37.705Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-feef0/adminSdkConfig [none]
+[debug] [2023-07-22T08:51:38.543Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-feef0/adminSdkConfig 200
+[debug] [2023-07-22T08:51:38.543Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-feef0/adminSdkConfig {"projectId":"clone-feef0","storageBucket":"clone-feef0.appspot.com"}
+[debug] [2023-07-22T08:51:38.586Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-feef0/sites 
+[debug] [2023-07-22T08:51:40.551Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-feef0/sites 200
+[debug] [2023-07-22T08:51:40.551Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-feef0/sites {"sites":[{"name":"projects/clone-feef0/sites/clone-feef0","defaultUrl":"https://clone-feef0.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-07-22T08:51:40.552Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-feef0/webApps/-/config [none]
+[debug] [2023-07-22T08:51:41.877Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-feef0/webApps/-/config 200
+[debug] [2023-07-22T08:51:41.877Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-feef0/webApps/-/config {"projectId":"clone-feef0","appId":"1:4560408019:web:5cf006b0a860f5f9ea3326","storageBucket":"clone-feef0.appspot.com","apiKey":"AIzaSyBB-OMdRj1Gtc4ZSnbxnySsW3L4Bfgojus","authDomain":"clone-feef0.firebaseapp.com","messagingSenderId":"4560408019","measurementId":"G-ETQVVLY50Q"}
+[debug] [2023-07-22T08:51:41.891Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-feef0 [none]
+[debug] [2023-07-22T08:51:42.801Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-feef0 200
+[debug] [2023-07-22T08:51:42.802Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-feef0 {"projectId":"clone-feef0","projectNumber":"4560408019","displayName":"Amazon-Clone","name":"projects/clone-feef0","resources":{"hostingSite":"clone-feef0"},"state":"ACTIVE","etag":"1_eddda64d-8d9a-4219-8d4b-c4031eca747f"}
+[info] i  hosting[clone-feef0]: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] +  hosting[clone-feef0]: Local server: http://127.0.0.1:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5000\u001b[22m\u001b[24m"}}
+[info] i  ui: downloading ui-v1.11.7.zip... {"metadata":{"emulator":{"name":"ui"},"message":"downloading ui-v1.11.7.zip..."}}
+[debug] [2023-07-22T08:51:42.871Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.11.7.zip 
+[debug] [2023-07-22T08:51:43.483Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.11.7.zip 200
+[debug] [2023-07-22T08:51:43.483Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.11.7.zip [stream]
+[debug] [2023-07-22T08:51:49.692Z] Data is 3064105
+[debug] [2023-07-22T08:51:49.692Z] [unzip] Entry: client/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2023-07-22T08:51:49.692Z] [unzip] Processing entry: client\
+[debug] [2023-07-22T08:51:49.692Z] [unzip] mkdir: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client\
+[debug] [2023-07-22T08:51:49.694Z] [unzip] Entry: client/favicon.ico (compressed_size=2497 bytes, uncompressed_size=7406 bytes)
+[debug] [2023-07-22T08:51:49.694Z] [unzip] Processing entry: client\favicon.ico
+[debug] [2023-07-22T08:51:49.694Z] [unzip] else mkdir: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-07-22T08:51:49.695Z] [unzip] deflating: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client\favicon.ico
+[debug] [2023-07-22T08:51:49.705Z] [unzip] Entry: client/apple-touch-icon.png (compressed_size=7231 bytes, uncompressed_size=7367 bytes)
+[debug] [2023-07-22T08:51:49.706Z] [unzip] Processing entry: client\apple-touch-icon.png
+[debug] [2023-07-22T08:51:49.706Z] [unzip] else mkdir: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-07-22T08:51:49.706Z] [unzip] deflating: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client\apple-touch-icon.png
+[debug] [2023-07-22T08:51:49.708Z] [unzip] Entry: client/android-chrome-512x512.png (compressed_size=16987 bytes, uncompressed_size=18186 bytes)
+[debug] [2023-07-22T08:51:49.709Z] [unzip] Processing entry: client\android-chrome-512x512.png
+[debug] [2023-07-22T08:51:49.709Z] [unzip] else mkdir: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-07-22T08:51:49.709Z] [unzip] deflating: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client\android-chrome-512x512.png
+[debug] [2023-07-22T08:51:49.714Z] [unzip] Entry: client/assets/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2023-07-22T08:51:49.714Z] [unzip] Processing entry: client\assets\
+[debug] [2023-07-22T08:51:49.714Z] [unzip] mkdir: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client\assets\
+[debug] [2023-07-22T08:51:49.715Z] [unzip] Entry: client/assets/extensions/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2023-07-22T08:51:49.715Z] [unzip] Processing entry: client\assets\extensions\
+[debug] [2023-07-22T08:51:49.715Z] [unzip] mkdir: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client\assets\extensions\
+[debug] [2023-07-22T08:51:49.716Z] [unzip] Entry: client/assets/extensions/default-extension.png (compressed_size=1646 bytes, uncompressed_size=1657 bytes)
+[debug] [2023-07-22T08:51:49.716Z] [unzip] Processing entry: client\assets\extensions\default-extension.png
+[debug] [2023-07-22T08:51:49.716Z] [unzip] else mkdir: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client\assets\extensions
+[debug] [2023-07-22T08:51:49.716Z] [unzip] deflating: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client\assets\extensions\default-extension.png
+[debug] [2023-07-22T08:51:49.719Z] [unzip] Entry: client/assets/index.58ca09f7.css (compressed_size=37601 bytes, uncompressed_size=321252 bytes)
+[debug] [2023-07-22T08:51:49.719Z] [unzip] Processing entry: client\assets\index.58ca09f7.css
+[debug] [2023-07-22T08:51:49.719Z] [unzip] else mkdir: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client\assets
+[debug] [2023-07-22T08:51:49.720Z] [unzip] deflating: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client\assets\index.58ca09f7.css
+[debug] [2023-07-22T08:51:49.724Z] [unzip] Entry: client/assets/index.c2583d42.js (compressed_size=526232 bytes, uncompressed_size=1860152 bytes)
+[debug] [2023-07-22T08:51:49.724Z] [unzip] Processing entry: client\assets\index.c2583d42.js
+[debug] [2023-07-22T08:51:49.724Z] [unzip] else mkdir: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client\assets
+[debug] [2023-07-22T08:51:49.725Z] [unzip] deflating: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client\assets\index.c2583d42.js
+[debug] [2023-07-22T08:51:49.745Z] [unzip] Entry: client/assets/provider-icons/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2023-07-22T08:51:49.746Z] [unzip] Processing entry: client\assets\provider-icons\
+[debug] [2023-07-22T08:51:49.746Z] [unzip] mkdir: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\
+[debug] [2023-07-22T08:51:49.748Z] [unzip] Entry: client/assets/provider-icons/auth_service_oidc.svg (compressed_size=414 bytes, uncompressed_size=858 bytes)
+[debug] [2023-07-22T08:51:49.748Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_oidc.svg
+[debug] [2023-07-22T08:51:49.748Z] [unzip] else mkdir: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-07-22T08:51:49.749Z] [unzip] deflating: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_oidc.svg
+[debug] [2023-07-22T08:51:49.751Z] [unzip] Entry: client/assets/provider-icons/auth_service_yahoo.svg (compressed_size=577 bytes, uncompressed_size=1182 bytes)
+[debug] [2023-07-22T08:51:49.751Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_yahoo.svg
+[debug] [2023-07-22T08:51:49.751Z] [unzip] else mkdir: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-07-22T08:51:49.752Z] [unzip] deflating: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_yahoo.svg
+[debug] [2023-07-22T08:51:49.754Z] [unzip] Entry: client/assets/provider-icons/auth_service_phone.svg (compressed_size=261 bytes, uncompressed_size=414 bytes)
+[debug] [2023-07-22T08:51:49.754Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_phone.svg
+[debug] [2023-07-22T08:51:49.754Z] [unzip] else mkdir: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-07-22T08:51:49.755Z] [unzip] deflating: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_phone.svg
+[debug] [2023-07-22T08:51:49.757Z] [unzip] Entry: client/assets/provider-icons/auth_service_saml.svg (compressed_size=575 bytes, uncompressed_size=1226 bytes)
+[debug] [2023-07-22T08:51:49.757Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_saml.svg
+[debug] [2023-07-22T08:51:49.758Z] [unzip] else mkdir: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-07-22T08:51:49.758Z] [unzip] deflating: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_saml.svg
+[debug] [2023-07-22T08:51:49.760Z] [unzip] Entry: client/assets/provider-icons/auth_service_mslive.svg (compressed_size=203 bytes, uncompressed_size=378 bytes)
+[debug] [2023-07-22T08:51:49.760Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_mslive.svg
+[debug] [2023-07-22T08:51:49.760Z] [unzip] else mkdir: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-07-22T08:51:49.762Z] [unzip] deflating: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_mslive.svg
+[debug] [2023-07-22T08:51:49.765Z] [unzip] Entry: client/assets/provider-icons/auth_service_facebook.svg (compressed_size=289 bytes, uncompressed_size=457 bytes)
+[debug] [2023-07-22T08:51:49.765Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_facebook.svg
+[debug] [2023-07-22T08:51:49.766Z] [unzip] else mkdir: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-07-22T08:51:49.766Z] [unzip] deflating: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_facebook.svg
+[debug] [2023-07-22T08:51:49.768Z] [unzip] Entry: client/assets/provider-icons/auth_service_play_games.svg (compressed_size=565 bytes, uncompressed_size=1173 bytes)
+[debug] [2023-07-22T08:51:49.768Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_play_games.svg
+[debug] [2023-07-22T08:51:49.768Z] [unzip] else mkdir: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-07-22T08:51:49.769Z] [unzip] deflating: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_play_games.svg
+[debug] [2023-07-22T08:51:49.771Z] [unzip] Entry: client/assets/provider-icons/auth_service_github.svg (compressed_size=466 bytes, uncompressed_size=838 bytes)
+[debug] [2023-07-22T08:51:49.771Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_github.svg
+[debug] [2023-07-22T08:51:49.771Z] [unzip] else mkdir: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-07-22T08:51:49.772Z] [unzip] deflating: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_github.svg
+[debug] [2023-07-22T08:51:49.774Z] [unzip] Entry: client/assets/provider-icons/auth_service_apple.svg (compressed_size=230 bytes, uncompressed_size=334 bytes)
+[debug] [2023-07-22T08:51:49.774Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_apple.svg
+[debug] [2023-07-22T08:51:49.774Z] [unzip] else mkdir: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-07-22T08:51:49.775Z] [unzip] deflating: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_apple.svg
+[debug] [2023-07-22T08:51:49.776Z] [unzip] Entry: client/assets/provider-icons/auth_service_google.svg (compressed_size=409 bytes, uncompressed_size=720 bytes)
+[debug] [2023-07-22T08:51:49.777Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_google.svg
+[debug] [2023-07-22T08:51:49.777Z] [unzip] else mkdir: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-07-22T08:51:49.777Z] [unzip] deflating: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_google.svg
+[debug] [2023-07-22T08:51:49.780Z] [unzip] Entry: client/assets/provider-icons/auth_service_email.svg (compressed_size=228 bytes, uncompressed_size=326 bytes)
+[debug] [2023-07-22T08:51:49.780Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_email.svg
+[debug] [2023-07-22T08:51:49.780Z] [unzip] else mkdir: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-07-22T08:51:49.781Z] [unzip] deflating: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_email.svg
+[debug] [2023-07-22T08:51:49.782Z] [unzip] Entry: client/assets/provider-icons/auth_service_twitter.svg (compressed_size=444 bytes, uncompressed_size=751 bytes)
+[debug] [2023-07-22T08:51:49.783Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_twitter.svg
+[debug] [2023-07-22T08:51:49.783Z] [unzip] else mkdir: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-07-22T08:51:49.783Z] [unzip] deflating: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_twitter.svg
+[debug] [2023-07-22T08:51:49.785Z] [unzip] Entry: client/assets/provider-icons/auth_service_game_center.svg (compressed_size=991 bytes, uncompressed_size=3921 bytes)
+[debug] [2023-07-22T08:51:49.786Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_game_center.svg
+[debug] [2023-07-22T08:51:49.786Z] [unzip] else mkdir: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2023-07-22T08:51:49.786Z] [unzip] deflating: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_game_center.svg
+[debug] [2023-07-22T08:51:49.788Z] [unzip] Entry: client/assets/index.c2583d42.js.map (compressed_size=1778557 bytes, uncompressed_size=7961927 bytes)
+[debug] [2023-07-22T08:51:49.788Z] [unzip] Processing entry: client\assets\index.c2583d42.js.map
+[debug] [2023-07-22T08:51:49.788Z] [unzip] else mkdir: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client\assets
+[debug] [2023-07-22T08:51:49.789Z] [unzip] deflating: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client\assets\index.c2583d42.js.map
+[debug] [2023-07-22T08:51:49.853Z] [unzip] Entry: client/assets/img/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2023-07-22T08:51:49.854Z] [unzip] Processing entry: client\assets\img\
+[debug] [2023-07-22T08:51:49.854Z] [unzip] mkdir: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client\assets\img\
+[debug] [2023-07-22T08:51:49.855Z] [unzip] Entry: client/assets/img/database.png (compressed_size=29449 bytes, uncompressed_size=29988 bytes)
+[debug] [2023-07-22T08:51:49.855Z] [unzip] Processing entry: client\assets\img\database.png
+[debug] [2023-07-22T08:51:49.855Z] [unzip] else mkdir: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client\assets\img
+[debug] [2023-07-22T08:51:49.856Z] [unzip] deflating: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client\assets\img\database.png
+[debug] [2023-07-22T08:51:49.858Z] [unzip] Entry: client/safari-pinned-tab.svg (compressed_size=838 bytes, uncompressed_size=1504 bytes)
+[debug] [2023-07-22T08:51:49.858Z] [unzip] Processing entry: client\safari-pinned-tab.svg
+[debug] [2023-07-22T08:51:49.859Z] [unzip] else mkdir: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-07-22T08:51:49.859Z] [unzip] deflating: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client\safari-pinned-tab.svg
+[debug] [2023-07-22T08:51:49.861Z] [unzip] Entry: client/mstile-150x150.png (compressed_size=5406 bytes, uncompressed_size=5723 bytes)
+[debug] [2023-07-22T08:51:49.861Z] [unzip] Processing entry: client\mstile-150x150.png
+[debug] [2023-07-22T08:51:49.861Z] [unzip] else mkdir: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-07-22T08:51:49.862Z] [unzip] deflating: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client\mstile-150x150.png
+[debug] [2023-07-22T08:51:49.865Z] [unzip] Entry: client/browserconfig.xml (compressed_size=491 bytes, uncompressed_size=822 bytes)
+[debug] [2023-07-22T08:51:49.866Z] [unzip] Processing entry: client\browserconfig.xml
+[debug] [2023-07-22T08:51:49.866Z] [unzip] else mkdir: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-07-22T08:51:49.866Z] [unzip] deflating: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client\browserconfig.xml
+[debug] [2023-07-22T08:51:49.868Z] [unzip] Entry: client/robots.txt (compressed_size=26 bytes, uncompressed_size=26 bytes)
+[debug] [2023-07-22T08:51:49.869Z] [unzip] Processing entry: client\robots.txt
+[debug] [2023-07-22T08:51:49.869Z] [unzip] else mkdir: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-07-22T08:51:49.869Z] [unzip] Writing file: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client\robots.txt
+[debug] [2023-07-22T08:51:49.872Z] [unzip] Entry: client/index.html (compressed_size=1363 bytes, uncompressed_size=3064 bytes)
+[debug] [2023-07-22T08:51:49.872Z] [unzip] Processing entry: client\index.html
+[debug] [2023-07-22T08:51:49.872Z] [unzip] else mkdir: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-07-22T08:51:49.873Z] [unzip] deflating: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client\index.html
+[debug] [2023-07-22T08:51:49.874Z] [unzip] Entry: client/favicon-16x16.png (compressed_size=757 bytes, uncompressed_size=777 bytes)
+[debug] [2023-07-22T08:51:49.875Z] [unzip] Processing entry: client\favicon-16x16.png
+[debug] [2023-07-22T08:51:49.875Z] [unzip] else mkdir: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-07-22T08:51:49.875Z] [unzip] deflating: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client\favicon-16x16.png
+[debug] [2023-07-22T08:51:49.877Z] [unzip] Entry: client/manifest.json (compressed_size=246 bytes, uncompressed_size=551 bytes)
+[debug] [2023-07-22T08:51:49.878Z] [unzip] Processing entry: client\manifest.json
+[debug] [2023-07-22T08:51:49.878Z] [unzip] else mkdir: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-07-22T08:51:49.879Z] [unzip] deflating: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client\manifest.json
+[debug] [2023-07-22T08:51:49.881Z] [unzip] Entry: client/favicon-32x32.png (compressed_size=1175 bytes, uncompressed_size=1175 bytes)
+[debug] [2023-07-22T08:51:49.881Z] [unzip] Processing entry: client\favicon-32x32.png
+[debug] [2023-07-22T08:51:49.882Z] [unzip] else mkdir: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-07-22T08:51:49.882Z] [unzip] Writing file: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client\favicon-32x32.png
+[debug] [2023-07-22T08:51:49.883Z] [unzip] Entry: client/android-chrome-192x192.png (compressed_size=7602 bytes, uncompressed_size=7834 bytes)
+[debug] [2023-07-22T08:51:49.883Z] [unzip] Processing entry: client\android-chrome-192x192.png
+[debug] [2023-07-22T08:51:49.883Z] [unzip] else mkdir: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2023-07-22T08:51:49.884Z] [unzip] deflating: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\client\android-chrome-192x192.png
+[debug] [2023-07-22T08:51:49.886Z] [unzip] Entry: server/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2023-07-22T08:51:49.886Z] [unzip] Processing entry: server\
+[debug] [2023-07-22T08:51:49.886Z] [unzip] mkdir: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\server\
+[debug] [2023-07-22T08:51:49.886Z] [unzip] Entry: server/server.js (compressed_size=343746 bytes, uncompressed_size=1346374 bytes)
+[debug] [2023-07-22T08:51:49.887Z] [unzip] Processing entry: server\server.js
+[debug] [2023-07-22T08:51:49.887Z] [unzip] else mkdir: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\server
+[debug] [2023-07-22T08:51:49.887Z] [unzip] deflating: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\server\server.js
+[debug] [2023-07-22T08:51:49.899Z] [unzip] Entry: server/server.js.map (compressed_size=289157 bytes, uncompressed_size=1325651 bytes)
+[debug] [2023-07-22T08:51:49.899Z] [unzip] Processing entry: server\server.js.map
+[debug] [2023-07-22T08:51:49.899Z] [unzip] else mkdir: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\server
+[debug] [2023-07-22T08:51:49.900Z] [unzip] deflating: C:\Users\DELL\.cache\firebase\emulators\ui-v1.11.7\server\server.js.map
+[debug] [2023-07-22T08:51:49.916Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2023-07-22T08:51:49.917Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2023-07-22T08:51:49.917Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\DELL\\.cache\\firebase\\emulators\\ui-v1.11.7\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\DELL\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.11.7\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2023-07-22T08:51:50.136Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2023-07-22T08:51:50.137Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "C:\Users\DELL\OneDrive\Desktop\AmazonClone\app\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\DELL\\OneDrive\\Desktop\\AmazonClone\\app\\functions\" for Cloud Functions..."}}
+[debug] [2023-07-22T08:51:50.215Z] Validating nodejs source
+[debug] [2023-07-22T08:51:52.663Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-07-22T08:51:52.664Z] Building nodejs source
+[debug] [2023-07-22T08:51:52.665Z] Failed to find version of module node: reached end of search path C:\Users\DELL\OneDrive\Desktop\AmazonClone\app\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-07-22T08:51:52.670Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-07-22T08:51:52.686Z] Found firebase-functions binary at 'C:\Users\DELL\OneDrive\Desktop\AmazonClone\app\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8832
+
+[error] C:\Users\DELL\OneDrive\Desktop\AmazonClone\app\functions\node_modules\express\lib\response.js:621
+    ? mime.lookup(type)
+           ^
+
+TypeError: mime.lookup is not a function
+    at ServerResponse.contentType (C:\Users\DELL\OneDrive\Desktop\AmazonClone\app\functions\node_modules\express\lib\response.js:621:12)
+    at ServerResponse.send (C:\Users\DELL\OneDrive\Desktop\AmazonClone\app\functions\node_modules\express\lib\response.js:149:14)
+    at C:\Users\DELL\OneDrive\Desktop\AmazonClone\app\functions\node_modules\firebase-functions\lib\bin\firebase-functions.js:61:29
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+
+[debug] [2023-07-22T08:51:53.602Z] Failed to call quitquitquit. This often means the server failed to start request to http://localhost:8832/__/quitquitquit failed, reason: connect ECONNREFUSED ::1:8832 {"message":"request to http://localhost:8832/__/quitquitquit failed, reason: connect ECONNREFUSED ::1:8832","type":"system","errno":"ECONNREFUSED","code":"ECONNREFUSED"}
+[error] !!  functions: Failed to load function definition from source: FetchError: request to http://127.0.0.1:8832/__/functions.yaml failed, reason: read ECONNRESET {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FetchError: request to http://127.0.0.1:8832/__/functions.yaml failed, reason: read ECONNRESET"}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Hosting   │ 127.0.0.1:5000 │ n/a                             │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2023-07-22T08:54:08.195Z] File C:\Users\DELL\OneDrive\Desktop\AmazonClone\app\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\OneDrive\\Desktop\\AmazonClone\\app\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-07-22T08:54:09.199Z] Validating nodejs source
+[debug] [2023-07-22T08:54:13.134Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-07-22T08:54:13.134Z] Building nodejs source
+[debug] [2023-07-22T08:54:13.135Z] Failed to find version of module node: reached end of search path C:\Users\DELL\OneDrive\Desktop\AmazonClone\app\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-07-22T08:54:13.138Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-07-22T08:54:13.151Z] Found firebase-functions binary at 'C:\Users\DELL\OneDrive\Desktop\AmazonClone\app\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-07-22T08:54:13.167Z] File C:\Users\DELL\OneDrive\Desktop\AmazonClone\app\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\DELL\\OneDrive\\Desktop\\AmazonClone\\app\\functions\\index.js changed, reloading triggers"}}
+[info] Serving at port 8735
+
+[error] C:\Users\DELL\OneDrive\Desktop\AmazonClone\app\functions\node_modules\express\lib\response.js:621
+    ? mime.lookup(type)
+           ^
+
+TypeError: mime.lookup is not a function
+    at ServerResponse.contentType (C:\Users\DELL\OneDrive\Desktop\AmazonClone\app\functions\node_modules\express\lib\response.js:621:12)
+    at ServerResponse.send (C:\Users\DELL\OneDrive\Desktop\AmazonClone\app\functions\node_modules\express\lib\response.js:149:14)
+    at C:\Users\DELL\OneDrive\Desktop\AmazonClone\app\functions\node_modules\firebase-functions\lib\bin\firebase-functions.js:61:29
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+
+[debug] [2023-07-22T08:54:13.871Z] Failed to call quitquitquit. This often means the server failed to start request to http://localhost:8735/__/quitquitquit failed, reason: connect ECONNREFUSED ::1:8735 {"message":"request to http://localhost:8735/__/quitquitquit failed, reason: connect ECONNREFUSED ::1:8735","type":"system","errno":"ECONNREFUSED","code":"ECONNREFUSED"}
+[error] !!  functions: Failed to load function definition from source: FetchError: request to http://127.0.0.1:8735/__/functions.yaml failed, reason: read ECONNRESET {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FetchError: request to http://127.0.0.1:8735/__/functions.yaml failed, reason: read ECONNRESET"}}
+[debug] [2023-07-22T08:54:14.178Z] Validating nodejs source
+[debug] [2023-07-22T08:54:16.330Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-07-22T08:54:16.330Z] Building nodejs source
+[debug] [2023-07-22T08:54:16.330Z] Failed to find version of module node: reached end of search path C:\Users\DELL\OneDrive\Desktop\AmazonClone\app\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-07-22T08:54:16.332Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-07-22T08:54:16.342Z] Found firebase-functions binary at 'C:\Users\DELL\OneDrive\Desktop\AmazonClone\app\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8905
+
+[error] C:\Users\DELL\OneDrive\Desktop\AmazonClone\app\functions\node_modules\express\lib\response.js:621
+    ? mime.lookup(type)
+           ^
+
+TypeError: mime.lookup is not a function
+    at ServerResponse.contentType (C:\Users\DELL\OneDrive\Desktop\AmazonClone\app\functions\node_modules\express\lib\response.js:621:12)
+    at ServerResponse.send (C:\Users\DELL\OneDrive\Desktop\AmazonClone\app\functions\node_modules\express\lib\response.js:149:14)
+    at C:\Users\DELL\OneDrive\Desktop\AmazonClone\app\functions\node_modules\firebase-functions\lib\bin\firebase-functions.js:61:29
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.16.0
+
+[debug] [2023-07-22T08:54:16.962Z] Failed to call quitquitquit. This often means the server failed to start request to http://localhost:8905/__/quitquitquit failed, reason: connect ECONNREFUSED ::1:8905 {"message":"request to http://localhost:8905/__/quitquitquit failed, reason: connect ECONNREFUSED ::1:8905","type":"system","errno":"ECONNREFUSED","code":"ECONNREFUSED"}
+[error] !!  functions: Failed to load function definition from source: FetchError: request to http://127.0.0.1:8905/__/functions.yaml failed, reason: read ECONNRESET {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FetchError: request to http://127.0.0.1:8905/__/functions.yaml failed, reason: read ECONNRESET"}}
+[info] i  hosting: 127.0.0.1 - - [22/Jul/2023:08:56:57 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [22/Jul/2023:08:56:57 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [22/Jul/2023:08:56:57 +0000] "GET /static/css/main.220bb327.css HTTP/1.1" 200 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [22/Jul/2023:08:56:57 +0000] \"GET /static/css/main.220bb327.css HTTP/1.1\" 200 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [22/Jul/2023:08:56:57 +0000] "GET /static/js/main.ae7a9be7.js HTTP/1.1" 200 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [22/Jul/2023:08:56:57 +0000] \"GET /static/js/main.ae7a9be7.js HTTP/1.1\" 200 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [22/Jul/2023:08:56:59 +0000] "GET /favicon.ico HTTP/1.1" 404 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [22/Jul/2023:08:56:59 +0000] \"GET /favicon.ico HTTP/1.1\" 404 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [22/Jul/2023:08:56:59 +0000] "GET /manifest.json HTTP/1.1" 404 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [22/Jul/2023:08:56:59 +0000] \"GET /manifest.json HTTP/1.1\" 404 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36\""}}
